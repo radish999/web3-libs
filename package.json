@@ -1,20 +1,18 @@
 {
   "name": "web3-libs",
   "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "build": "pnpm -r dev",
+    "build": "pnpm -r build",
     "dev": "pnpm -r dev",
-    "clean": "rm -rf node_modules packages/*/node_modules",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "pnpm build && changeset publish",
-    "publish:local": "pnpm build && pnpm -r publish --registry http://localhost:4873/"
+    "release": "pnpm build && changeset publish"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.1",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0",
-    "typescript": "^5.0.0",
-    "tsup": "^8.0.0"
+    "@changesets/cli": "^2.26.0"
   }
 }
