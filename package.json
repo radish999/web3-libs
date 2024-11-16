@@ -2,7 +2,7 @@
   "name": "web3-libs",
   "private": true,
   "scripts": {
-    "build": "pnpm -r build",
+    "build": "pnpm -r dev",
     "dev": "pnpm -r dev",
     "clean": "rm -rf node_modules packages/*/node_modules",
     "changeset": "changeset",
